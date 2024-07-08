@@ -95,7 +95,7 @@ public class ReviewBoundaryTest {
 	}
 
 	@Test
-	public void testRatingNotNull() throws IOException {
+	public void testReviewRatingNotNull() throws IOException {
 		ReviewDTO reviewDTO = new ReviewDTO();
 		reviewDTO.setRating(null);
 		Set<ConstraintViolation<ReviewDTO>> violations = validator.validate(reviewDTO);
@@ -107,7 +107,7 @@ public class ReviewBoundaryTest {
 	}
 
 	@Test
-	public void testRatingPositive() throws IOException {
+	public void testReviewRatingPositive() throws IOException {
 		ReviewDTO reviewDTO = new ReviewDTO();
 		reviewDTO.setRating(-1.0);
 		Set<ConstraintViolation<ReviewDTO>> violations = validator.validate(reviewDTO);
