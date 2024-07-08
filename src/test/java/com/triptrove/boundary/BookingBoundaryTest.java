@@ -35,7 +35,7 @@ public class BookingBoundaryTest {
 	}
 
 	@Test
-	public void testUserIdNotNull() throws IOException {
+	public void testBookingUserIdNotNull() throws IOException {
 		BookingDTO bookingDTO = new BookingDTO();
 		bookingDTO.setUserId(null);
 		Set<ConstraintViolation<BookingDTO>> violations = validator.validate(bookingDTO);
@@ -47,7 +47,7 @@ public class BookingBoundaryTest {
 	}
 
 	@Test
-	public void testTourIdNotNull() throws IOException {
+	public void testBookingTourIdNotNull() throws IOException {
 		BookingDTO bookingDTO = new BookingDTO();
 		bookingDTO.setTourId(null);
 		Set<ConstraintViolation<BookingDTO>> violations = validator.validate(bookingDTO);
