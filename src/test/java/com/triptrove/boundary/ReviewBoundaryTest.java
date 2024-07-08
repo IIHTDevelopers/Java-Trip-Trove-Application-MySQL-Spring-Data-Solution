@@ -35,7 +35,7 @@ public class ReviewBoundaryTest {
 	}
 
 	@Test
-	public void testUserIdNotNull() throws IOException {
+	public void testReviewUserIdNotNull() throws IOException {
 		ReviewDTO reviewDTO = new ReviewDTO();
 		reviewDTO.setUserId(null);
 		Set<ConstraintViolation<ReviewDTO>> violations = validator.validate(reviewDTO);
@@ -47,7 +47,7 @@ public class ReviewBoundaryTest {
 	}
 
 	@Test
-	public void testTourIdNotNull() throws IOException {
+	public void testReviewTourIdNotNull() throws IOException {
 		ReviewDTO reviewDTO = new ReviewDTO();
 		reviewDTO.setTourId(null);
 		Set<ConstraintViolation<ReviewDTO>> violations = validator.validate(reviewDTO);
