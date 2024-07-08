@@ -131,7 +131,7 @@ public class TourBoundaryTest {
 	}
 
 	@Test
-	public void testRatingNotNull() throws IOException {
+	public void testTourRatingNotNull() throws IOException {
 		TourDTO tourDTO = new TourDTO();
 		tourDTO.setRating(null);
 		Set<ConstraintViolation<TourDTO>> violations = validator.validate(tourDTO);
@@ -143,7 +143,7 @@ public class TourBoundaryTest {
 	}
 
 	@Test
-	public void testRatingPositive() throws IOException {
+	public void testTourRatingPositive() throws IOException {
 		TourDTO tourDTO = new TourDTO();
 		tourDTO.setRating(-1.0);
 		Set<ConstraintViolation<TourDTO>> violations = validator.validate(tourDTO);
